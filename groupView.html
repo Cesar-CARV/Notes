@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SadNotes</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/buttons.css">
+
+</head>
+<body>
+    
+    <header>
+        <nav class="flex-nav">
+            <div>
+                <a href="index.html">◀</a>
+                <h1 class="title">SadNotes</h1>
+                
+            </div>
+            <div>
+                <input type="button" value="⚙️" class="btn btn_config btn-circle--dark">
+            </div>
+        </nav>
+    </header>
+    
+    <main class="app">
+        <h3 class="group-title"></h3>
+        <div class="list-notes">
+
+        </div>
+    </main>
+
+    <div class="action-buttons-container">
+        <input type="button" value="+" class="btn btn-circle btn_add">
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" style="display: none;">
+
+    </div>
+
+    <script src="js/Modal.js"></script>
+    <script src="js/ModalAddGroup.js"></script>
+    <script src="js/ModalAddCard.js"></script>
+    <script src="js/Card.js"></script>
+    <script src="js/groupView.js"></script>
+</body>
+</html>

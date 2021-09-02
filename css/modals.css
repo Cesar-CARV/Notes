@@ -1,0 +1,64 @@
+:root{
+    --modal-container-bg: rgba(20,20,20,.6);
+    --modal-border-color: #444;
+    --modal-menu-bg: #363636;
+    --modal-background: #222;
+}
+
+.modal-container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: var(--modal-container-bg);
+}
+
+
+.modal{
+    border: solid 1px var(--modal-border-color);
+    border-radius: 10px;
+    width: 80vw;
+    max-width: 500px;
+    overflow: hidden;
+    background-color: var(--modal-background);
+}
+
+.modal-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: var(--modal-menu-bg);
+}
+
+.modal-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-content form input[type="text"]{
+    width: 95%;
+    margin: 5px;
+}
+
+.modal-content form{
+    margin-top: 5px;
+}
+.modal-content form ul{
+    list-style: none;
+    padding-left: 10px;
+}
+
+.modal-content form ul li{
+    margin: 5px;
+}
+
+.modal-buttons{
+    text-align: center;
+}

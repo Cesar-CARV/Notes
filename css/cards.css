@@ -1,0 +1,147 @@
+:root{
+    --card-background: #363636;
+    --card-shadow: #000;
+    --card-status-none: #444;
+    --card-status-little: #1F3;
+    --card-status-medium: #FB2;
+    --card-status-high: #F25;
+
+    --card-color-title: #CECECE;
+    --card-progress-bg: #222;
+    --card-progress-fill--full: #3F6;
+    --card-progress-fill--medium: #FF2;
+    --card-progress-fill--little: #F05;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    cursor: pointer;
+    border-radius: 10px;
+    width: 30vw;
+    height: 30vw;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 5px;
+    margin: 5px auto;
+    overflow: hidden;
+    background-color: var(--card-background);
+    box-shadow: 0px 0px 3px var(--card-shadow);
+}
+
+.delete-group{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    /* transition: width .5s;
+    transition: height .5s; */
+}
+
+.status{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.status-none{
+    background-color: var(--card-status-none);
+}
+
+.status-little{
+    background-color: var(--card-status-little);
+}
+
+.status-medium{
+    background-color: var(--card-status-medium);
+}
+
+.status-high{
+    background-color: var(--card-status-high);
+}
+
+
+.group-title{
+    width: 100%;
+    overflow-wrap: break-word;
+    color: var(--card-color-title);
+    background-color: transparent;
+}
+
+.progress-group{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    border: none;
+    border-radius: 10px;
+    /* background-color: var(--card-progress-bg); */
+    background: linear-gradient(to right, var(--card-progress-fill--little), var(--card-progress-fill--medium), var(--card-progress-fill--full));
+}
+
+.progress-group::-moz-progress-bar{
+    direction: rtl;
+    /* border-radius: 10px; */
+    background-color: var(--card-progress-bg);
+    /* background: linear-gradient(to right, var(--card-progress-fill--little), var(--card-progress-fill--medium), var(--card-progress-fill--full)); */
+}
+
+/* List item */
+.list-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    /* cursor: pointer; */
+    border-radius: 10px;
+    width: 100%;
+    height: 30vw;
+    max-width: 850px;
+    max-height: 70px;
+    padding: 15px 10px;
+    margin: 5px auto;
+    overflow: hidden;
+    background-color: var(--card-background);
+    box-shadow: 0px 0px 3px var(--card-shadow);
+}
+
+.list-item:last-child{
+    margin-bottom: 100px;
+}
+
+.note-item{
+    height: max-content;
+    max-height: max-content;
+    /* height: 85vh;
+    max-height: 83vh; */
+}
+
+.list-item_menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.note-item h5{
+    margin-left: 10px;
+}
+
+.note-item p{
+    margin: auto;
+    padding: 10px;
+    height: 100%;
+    /* overflow-y: scroll; */
+}
+
+.list-item input[type="checkbox"]{
+    margin: 10px;
+}

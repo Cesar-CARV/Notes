@@ -1,0 +1,83 @@
+:root{
+    --btnC-background: #2F4;
+    --btnC-color: #121212;
+    --btn-cancel-bg: #F35;
+    --btn-cancel-cl: #FFF;
+    --btn-ok-bg: #3F5;
+    --btn-ok-cl: #222;
+}
+
+.btn{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-circle--dark{
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    color: var(--btn-cancel-cl);
+    background-color: var(--btnC-color);
+}
+
+.btn-circle{
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    color: var(--btnC-color);
+    background-color: var(--btnC-background);
+}
+
+.btn-cancel{
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+    color: var(--btn-cancel-cl);
+    background-color: var(--btn-cancel-bg);
+}
+
+.btn-ok{
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+    color: var(--btn-ok-cl);
+    background-color: var(--btn-ok-bg);
+}
+
+
+.btn_add--checked{
+    color: var(--btn-cancel-cl);
+}
+
+.btn_text, .btn_check{
+    position: absolute;
+    display: none;
+    left: calc(50% - 25px);
+    top: 10px;
+}
+
+
+.btn-delete{
+    border: none;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    color: var(--btn-cancel-cl);
+    background-color: var(--btn-cancel-bg);
+}

@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+:root{
+    --header-background: #363636;
+    --header-sombra: #121212;
+    --main-background: #121212;
+    --main-color: #CECECE;
+    --link-color: #3F4;
+}
+
+body{
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    color: var(--main-color);
+    background-color: var(--main-background);
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    background-color: var(--header-background);
+    box-shadow: 0px 0px 5px var(--header-sombra);
+    z-index: 100;
+}
+
+.flex-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.flex-nav div{
+    display: flex;
+    align-content: center;
+}
+
+.flex-nav div a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: var(--link-color);
+}
+
+.app{
+    padding: 10px 20px;
+}
+
+.notes-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat( auto-fill, minmax(100px, 150px));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, 150px);
+}
+
+.action-buttons-container{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+}
+
+/* groupView */
+.list-notes{
+    padding: 10px;
+}
